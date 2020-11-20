@@ -14,7 +14,7 @@ $jsonData = '{
 
     while($user = mysqli_fetch_assoc($users))
     {   
-        $buttons =  "<div class='btn-group'><button class='btn btn-outline-dark btnEditLogic ' idLogicdata='".$user["id"]."' ><i class='fa fa-cog fa-spin' style='font-size:20px;' ></i></button></div>";
+        $buttons =  "<div class='btn-group'><button class='btn btn-outline-dark btnEditLogic ' idLogicdata='".$user["id"]."' ><i class='fa fa-cog fa-spin' style='font-size:20px; color:#7367F0' ></i></button></div>";
         
             $jsonData .= '[
                 

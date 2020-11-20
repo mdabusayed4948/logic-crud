@@ -49,13 +49,47 @@ include "inc/header.php";
     
     </div>
 </div>
+
+</div>
+
+
+<div class="col-md-4">
+    <div class="card">
+        <div class="card-header">Main Category</div>
+        <div class="card-body">
+        <table class="table table-bordered text-center tables">
+        
+            <tbody>
+            <?php 
+                $datas = array("data one","data two","data three","data four","data five");
+        
+
+                foreach ($datas as $key => $data) { ?>
+                <tr>
+                    <td class="appendCategory" style="cursor: pointer;" idCategory="<?php echo $data;?>" ><?php echo $data;?></td>
+                    
+                </tr>
+                <?php }?>
+                
+            
+
+            </tbody>
+        </table>
+        </div>
+    </div>
+
+</div>
+
+</div>
 <br>
-<div class="card">
+<div class="row">
+    <div class="col-md-12">
+    <div class="card">
     <div class="card-header">
     Data List
     </div>
     <div class="card-body">
-    <table class="table table-bordered table-hover text-center tables" id="myTable">
+    <table class="table table-bordered table-hover text-center tables dt-responsive" id="myTable">
         <thead>
             <tr>
                 <th>#</th>
@@ -77,36 +111,7 @@ include "inc/header.php";
     </table>
     </div>
 </div>
-</div>
-
-
-<div class="col-md-4">
-    <div class="card">
-        <div class="card-header">Main Category</div>
-        <div class="card-body">
-        <table class="table table-bordered text-center tables">
-        
-            <tbody>
-            <?php 
-                $datas = array("data one","data two","data three","data four","data five","data six","data seven","data eight");
-        
-
-                foreach ($datas as $key => $data) { ?>
-                <tr>
-                    <td class="appendCategory" style="cursor: pointer;" idCategory="<?php echo $data;?>" ><?php echo $data;?></td>
-                    
-                </tr>
-                <?php }?>
-                
-            
-
-            </tbody>
-        </table>
-        </div>
     </div>
-
-</div>
-
 </div>
 
 

@@ -142,9 +142,9 @@ $(document).ready(function()
                 $("#description").val(answer["description"]);
 
                 $("button#btnAdd").hide();
+                $("button#btnRefresh").hide();
                 
-                $("button#btnEdit").show();
-                
+                $("button#btnEdit").show();                
                 $("button#btnDelete").show();
 
                 
@@ -180,7 +180,9 @@ $(document).ready(function()
                                         
                     $("#message_form")[0].reset("");
                     fetchFormData();
-                    $("#btnAdd").show();
+                    $("button#btnAdd").show();
+                    $("button#btnRefresh").show();
+
                     $("button#btnEdit").hide();                
                     $("button#btnDelete").hide();
 
@@ -222,7 +224,11 @@ $(document).ready(function()
                         
                         $("#message_form")[0].reset("");
                         fetchFormData();
-                        $("#btnAdd").show();
+                        $("button#btnAdd").show();
+                        $("button#btnRefresh").show();
+
+                        $("button#btnEdit").hide();                
+                        $("button#btnDelete").hide();
                     }
                 });
             }

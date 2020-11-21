@@ -38,7 +38,7 @@ include "inc/header.php";
             <label for="description" class="col-sm-2 col-form-label"></label>
             <div class="col-sm-10">
             <button type="submit" name="submit" id="btnAdd" class="btn btn-info">Save</button>
-            <button type="reset"  class="btn btn-primary">Refresh</button>
+            <button type="reset" id="btnRefresh"  class="btn btn-primary">Refresh</button>
             <button type="submit" name="submit" id="btnEdit" class="btn btn-info" >Update</button>
             <button type="submit" name="submit" id="btnDelete" class="btn btn-danger"  >Delete</button>
             </div>
